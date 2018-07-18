@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Register form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<div class="step-bar">
+  <ul>
+    <li>
+      <div class="number active">1</div>
+      <div class="text">account setup</div>
+    </li>
+    <li> 
+      <div class="number">2</div>
+      <div class="text">profiles</div>
+      <div class="line"></div>
+    </li>
+    <li> 
+      <div class="number">3</div>
+      <div class="text">Contact Details</div>
+      <div class="line"></div>
+    </li>
+  </ul>
+</div>
+<h1>Create new account</h1>
+<form>
+  <div class="account-setup register-form">
+    <h2>Step 1</h2>
+    <input name="email" type="email" placeholder="Email"/>
+    <input name="password" type="password" placeholder="Password"/>
+    <input name="confirmPassword" type="password" placeholder="Confirm Password"/>
+    <div class="button firstNext">Next</div>
+  </div>
+  <div class="user-details register-form">
+    <h2>Step 2</h2>
+    <input name="name" type="text" placeholder="Full name"/>
+ <input name="Mobile" type="text" placeholder="Mobile No."/>
+  <label for="birth-day">Birth date</label>
+    <input class="error" name="birth-day" type="date"/>
+ <label for="birth-day">Gender</label>
+    <input class="error" name="Genger" type="radio" value="F" style="width:20%"/>Female<input class="error" name="Genger" type="radio" value="M" style="width:20%"/>Male
+   <div class="button firstPrev">Back</div>
+    <div class="button secondNext">Next</div>
+  </div>
+  <div class="finish-step register-form">
+    <h2>Step 3</h2>
+  <input name="State" type="text" placeholder="State"/>
+    <input name="city" type="text" placeholder="City"/>
+   <textarea name="address" cols="37" rows="5" placeholder="Address"></textarea>  <div class="error-text">*This field is required</div>
+    <label class="accept-conditions" for="accept">Accept <a href="#"> terms & conditions</a>
+      <input name="accept" type="checkbox"/>
+    </label>
+    <div class="button secondPrev">Back</div>
+    <div class="button disabled">Register</div>
+  </div>
+</form>
+  <script src='js/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
